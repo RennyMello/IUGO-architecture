@@ -2,7 +2,7 @@ IUGO ARCHITECTURE
 ====
 
 1.  [Contexto]
-2.  [Functional Overview]
+2.  [Descripción funcional]
 3.  Atributos de calidad
 4.  Restricciones
 5.  Principios
@@ -17,4 +17,4 @@ IUGO ARCHITECTURE
 
 
 [Contexto]: ./1.%20Contexto/Context.md
-[Functional Overview]: ./2.%20Descripcion%20funcional/Functional_Overwview.md
+[Descripción funcional]: ./2.%20Descripcion%20funcional/Functional_Overview.md
