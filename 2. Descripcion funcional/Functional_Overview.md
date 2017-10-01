@@ -18,7 +18,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 3. Solicitudes de carga
 
-* Los despachadores de las empresas de transporte podrán crear solicitudes de carga, las cuales contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta carga y cantidad de los mismos.
+* Los despachadores de las empresas de transporte podrán crear solicitudes de carga. Las solicitudes de carga contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta carga y cantidad de los mismos.
 
 ![alt text][crear_solicitud]
 
