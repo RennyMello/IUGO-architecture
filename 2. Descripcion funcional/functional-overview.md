@@ -12,17 +12,17 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * Los administradores de los vehículos podrán enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
 
-![alt text][tomar_Turno]
+![Tomar Turno][tomar_Turno]
 
-[tomar_Turno]: ./TomarTurno.png "Tomar Turno"
+[tomar_Turno]: ./assets/tomar-turno.png "Tomar Turno"
 
 ## 3. Solicitudes de carga
 
 * Los despachadores de las empresas de transporte podrán crear solicitudes de carga. Las solicitudes de carga contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta carga y cantidad de los mismos.
 
-![alt text][crear_solicitud]
+![Crear solicitud][crear_solicitud]
 
-[crear_solicitud]: ./Creacion_solicitud_carga.png "Crear solicitud de carga"
+[crear_solicitud]: ./assets/creacion-solicitud-carga.png "Crear solicitud de carga"
 
 ## 4. Asignación de turnos
 
@@ -38,9 +38,9 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * El sistema deberá terminar la oferta una vez el despachador haya asignado la totalidad de vehículos requeridos para la solicitud de carga.
 
-![alt text][asignar_turno]
+![Asignar turno][asignar_turno]
 
-[asignar_turno]: ./Asignacion_turnos.png "Asignar turno"
+[asignar_turno]: ./assets/asignacion-turnos.png "Asignar turno"
 
 ## 5. Cambio de estados
 
@@ -48,9 +48,9 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * El conductor podrá cambiar el estado de la solicitud de carga a **Entregado** una vez se encuentre dentro de la zona de descarga especificada en la solicitud de carga.
 
-![alt text][cambio_estados]
+![Cambio de estados][cambio_estados]
 
-[cambio_estados]: ./Cambio_estados.png "Cambio estados"
+[cambio_estados]: ./assets/cambio-estados.png "Cambio estados"
 
 
 **TODO: Definir estados : Aceptado, Cargando, En Transito, Entregado ?**
@@ -63,9 +63,9 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * El generador de carga podrá calificar cuantitativa y cualitativamente, vehículo y empresa de transporte.
 
-![alt text][calificacion]
+![Calificación][calificacion]
 
-[calificacion]: ./Calificacion.png "Calificacion"
+[calificacion]: ./assets/calificacion.png "Calificacion"
 
 
 **TODO: Revisar sintáxis requisitos funcionales**

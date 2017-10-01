@@ -15,4 +15,4 @@ IUGO facilita la tarea de las empresas de transporte  para encontrar un transpor
     1. **Administrador de flota**: Usuario encargado de enturnar un vehículo + conductor para realizar el transporte de una carga.
     2. **Conductor**: Usuario encargado de cambiar el estado de una solicitud de carga durante su transporte.
 
-[Context_Diagram]: ./IUGO_Context.png "https://www.lucidchart.com/documents/view/c41cd7f7-f578-4ce5-b239-06697e6b1652"
+[Context_Diagram]: ./assets/IUGO-context.png "https://www.lucidchart.com/documents/view/c41cd7f7-f578-4ce5-b239-06697e6b1652"
