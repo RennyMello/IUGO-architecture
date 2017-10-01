@@ -1,7 +1,7 @@
 IUGO ARCHITECTURE
 ====
 
-1.  [Contexto]
+1.  [Contexto].
 2.  Descripción funcional
 3.  Atributos de calidad
 4.  Restricciones
@@ -16,4 +16,4 @@ IUGO ARCHITECTURE
 13. Log de decisiones  
 
 
-[Contexto]: ./1.%20Contexto/Context.md
+[Contexto]: ./1.Contexto/Context.md
