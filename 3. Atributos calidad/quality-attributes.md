@@ -72,21 +72,21 @@ Los escenarios de calidad para IUGO son los siguientes
 
     
      <!-- Misc -->
-    [quality-radar]: ./assets/IUGO-quality-radar.png "IUGO quality radar"
+    [quality-radar]: ./assets/IUGO-quality-radar.PNG "IUGO quality radar"
     
 
      <!-- Availability -->
-     [availability-server-unresponsive]: ./assets/availability-server-unresponsive.png "availability server unresponsive"
+     [availability-server-unresponsive]: ./assets/availability-server-unresponsive.PNG "availability server unresponsive"
     
-     [availability-server-unresponsive-late-response]: ./assets/availability-server-unresponsive-late-response.png "availability server unresponsive late response"
+     [availability-server-unresponsive-late-response]: ./assets/availability-server-unresponsive-late-response.PNG "availability server unresponsive late response"
 
-     [availability-server-unresponsive-user-request]: ./assets/availability-server-unresponsive-user-request.png "availability server unresponsive"
+     [availability-server-unresponsive-user-request]: ./assets/availability-server-unresponsive-user-request.PNG "availability server unresponsive"
 
 
     <!-- Performance -->
-     [performance-event-process-time]: ./assets/performance-event-process-time.png "performance event process time"
+     [performance-event-process-time]: ./assets/performance-event-process-time.PNG "performance event process time"
 
     <!-- Security -->
-    [security-dataprotection]: ./assets/security-dataprotection.png "Security data protection"
+    [security-dataprotection]: ./assets/security-dataprotection.PNG "Security data protection"
     
     
