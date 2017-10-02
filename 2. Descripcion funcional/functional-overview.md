@@ -16,9 +16,9 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 [tomar_Turno]: ./assets/tomar-turno.png "Tomar Turno"
 
-## 3. Solicitudes de carga
+## 3. Solicitudes de Servicio
 
-* Los despachadores de las empresas de transporte podrán crear solicitudes de carga. Las solicitudes de carga contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta carga y cantidad de los mismos.
+* Los despachadores de las empresas de transporte podrán crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
 
 ![Crear solicitud][crear_solicitud]
 
