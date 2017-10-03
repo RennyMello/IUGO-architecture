@@ -18,7 +18,16 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 3. Solicitudes de Servicio
 
-* Los despachadores de las empresas de transporte podrán crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
+* Los Despachadores de las empresas de transporte podrán crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
+
+* Las especificaciones y características que tiene la carga/el servicio
+  
+  Tipo de Carga
+  Opciones a elegir: Cabezote/Trailer
+  Fechas de recogida y de entregas
+  Fecha límite de Asignación de la Carga ( dentro de 24 horas)
+  Rango de flete
+
 
 ![Crear solicitud][crear_solicitud]
 
@@ -28,15 +37,15 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * El sistema deberá presentar los vehículos que cumplan con las características requeridas para una solicitud de carga, los criterios con los cuales se establece el orden con el cual se muestren los candidatos deberá ser configurable para cada empresa de transporte.
 
-* Los despachadores seleccionarán los candidatos que consideren *aptos* para el transporte de la carga.
+* Los Despachadores seleccionarán los candidatos que consideren *aptos* para el transporte de la carga.
 
-* El sistema deberá notificar a los administradores de flota que han sido pre-seleccionados para transportar esta solicitud de carga.
+* El Sistema deberá notificar automaticamente a los administradores de flota que han sido pre-seleccionados (X pre-seleccionados) que cumplan con los criterios del servicio para transportar esta solicitud de carga.
 
-* Los administradores de flota podrán aceptar dicha oferta y participar en la asignación de la carga.
+* Los Administradores de Flota podrán aceptar dicha oferta y participar en la asignación de la carga.
 
-* Los despachadores seleccionarán uno o varios de los ofertantes, esto dependerá de la cantidad de vehículos necesarios para transportar dicha carga.
+* Los Despachadores seleccionarán uno o varios de los ofertantes/candidatos, esto dependerá de la cantidad de vehículos necesarios para transportar dicha carga.
 
-* El sistema deberá terminar la oferta una vez el despachador haya asignado la totalidad de vehículos requeridos para la solicitud de carga.
+* El Sistema deberá terminar la oferta una vez el despachador haya asignado la totalidad de vehículos requeridos para la solicitud de carga.
 
 ![Asignar turno][asignar_turno]
 
@@ -57,11 +66,24 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 6. Calificación de actores
 
-* El conductor podrá calificar de forma cuantitativa y cualitativamente al generador de carga, empresa de transporte y vehículo.
+* El Conductor podrá calificar de forma cuantitativa y cualitativamente al Generador de Carga, Empresa de Transporte y Vehículo.
 
-* La empresa de transporte podrá calificar cuantitativa y cualitativamente al conductor y empresa de transporte.
+  Cumplimiento de tiempos de recogida y descarga
+  Uso del vehículo al entregar y retorno
+  Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
+  Kilometros recorridos por mes
 
-* El generador de carga podrá calificar cuantitativa y cualitativamente, vehículo y empresa de transporte.
+* La Empresa de Transporte podrá calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
+
+  Fairness de asignación (Difícil en medir)
+  Veces de asignaciones
+  Asignaciones asignadas en fechas limites
+
+* El Generador de Carga podrá calificar cuantitativa y cualitativamente, Vehículo y Empresa de Transporte.
+
+  Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
+  Kilometraje (Excesivo y Moderado)
+
 
 ![Calificación][calificacion]
 
