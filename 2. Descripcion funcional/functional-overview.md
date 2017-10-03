@@ -4,7 +4,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 1. Carga de usuarios y assets
 
-* Se cargarán periodicamente (**to be defined**) los conductores/vehículos/propietarios registrados en las empresas de transporte.
+* Se cargarán periodicamente (**to be defined**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
 
 * El sistema no validará la información cargada por las empresas de transporte.
 
@@ -12,9 +12,11 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * Los Administradores de los vehículos podrán enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
 
-* Los Administradores de los vehículos deben de tener los permisos y autoridad para ser el actor de "toma de decisiones" de los vehículos que administra con el fin de hacer el match de la solicitud del servicio con el vehiculo y conductor.
+* Los Administradores de los vehículos deben de tener los permisos y autoridad para ser el actor de "toma de decisiones" de los vehículos que administra con el fin de hacer el match de la solicitud del servicio con el vehículo y conductor.
 
-* Los Propietarios de los vehículos asignan a sus Administradores de vehículos de la toma de decisiones sobre los vehiculos.
+* Los Propietarios de los vehículos asignan a sus Administradores de vehículos de la toma de decisiones sobre los vehículos.
+
+* Los conductores se pueden enturnar y desenturnar en cualquier momento. 
 
 ![Tomar Turno][tomar_Turno]
 
@@ -27,9 +29,17 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 * Las especificaciones y características que tiene la carga/el servicio
   
   Tipo de Carga: (Carga granel solida,Carga granel liquida, Perecedera, Refrigerada, Frágil y Animales vivos)
-  Opciones a elegir: Cabezote/Trailer
+  
+  Tipo de vehículo: **Resolucion 4308**
+  
+  Opciones a elegir: Cabezote
+  
+  Accesorios adicionales: TBD (Trailer y sus caracteristicas)
+  
   Fechas de recogida y de entregas
+  
   Fecha límite de Asignación de la Carga ( dentro de 24 horas)
+  
   Rango de flete
 
 ![Crear solicitud][crear_solicitud]
@@ -65,33 +75,53 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 [cambio_estados]: ./assets/cambio-estados.png "Cambio estados"
 
 **Enturnado:** Conductor esta disponible para hacer parte de la solicitud de servicio y match de vehículo.
+
 **Aceptado:** Conductor acepta la solicitud de servicio y esta listo para ser asignado a su vehículo con la informacion del destino y  origen.
+
 **En Transito:** Conductor esta en camino hacia su origen para cumplir con entrega de servicio.
+
 **Entregado:** Conductor ha llegado a su destino y entregado el servicio.
+
 **Emergencia:** Conductor tiene una inconvenience desde el estado Aceptado que lo impide cumplir con la recogida y entrega del servicio.
 
-**Enturnado, Aceptado, Cargando, En Transito, Entregado, Emergencia**
+**Deserturnarse:** 
+
+**Enturnado, Aceptado, Cargando, En Transito, Entregado, Emergencia, Desenturnarse**
 
 ## 6. Calificación de actores
 
 * El Conductor podrá calificar de forma cuantitativa y cualitativamente al Generador de Carga, Empresa de Transporte y Vehículo.
 
-  Cumplimiento de tiempos de recogida y descarga
-  Uso del vehículo al entregar y retorno
-  Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
-  Kilometros recorridos por mes
+   Cumplimiento de tiempos de recogida y descarga
+   
+   Uso del vehículo al entregar y retorno
+   
+   Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
+   
+   Kilometros recorridos por mes
 
 * La Empresa de Transporte podrá calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
 
-  Fairness de asignación (Difícil en medir)
-  Veces de asignaciones
-  Asignaciones asignadas en fechas limites
+   Fairness de asignación (Difícil en medir)
+   
+   Veces de asignaciones
+   
+   Asignaciones asignadas en fechas limites
 
 * El Generador de Carga podrá calificar cuantitativa y cualitativamente, Vehículo y Empresa de Transporte.
 
-  Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
-  Kilometraje (Excesivo y Moderado)
+   Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
+   
+   Kilometraje (Excesivo y Moderado)
 
+* El Administrador de Flotas podrá calificar cuantitativa y cualitativamente, Conductor y Empresa de Transporte.
+
+   Manejo de estados y su manipulacion (En especial el estado de Enturnarse y Desenturnarse)
+   
+   Requisitos de solicitud de servicios (veces requerido)
+   
+   Referridos
+   
 
 ![Calificación][calificacion]
 
