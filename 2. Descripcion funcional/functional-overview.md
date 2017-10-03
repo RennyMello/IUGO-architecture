@@ -10,7 +10,11 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 2. Enturnamiento
 
-* Los administradores de los vehículos podrán enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
+* Los Administradores de los vehículos podrán enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
+
+* Los Administradores de los vehículos deben de tener los permisos y autoridad para ser el actor de "toma de decisiones" de los vehículos que administra con el fin de hacer el match de la solicitud del servicio con el vehiculo y conductor.
+
+* Los Propietarios de los vehículos asignan a sus Administradores de vehículos de la toma de decisiones sobre los vehiculos.
 
 ![Tomar Turno][tomar_Turno]
 
@@ -22,12 +26,11 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * Las especificaciones y características que tiene la carga/el servicio
   
-  Tipo de Carga
+  Tipo de Carga: (Carga granel solida,Carga granel liquida, Perecedera, Refrigerada, Frágil y Animales vivos)
   Opciones a elegir: Cabezote/Trailer
   Fechas de recogida y de entregas
   Fecha límite de Asignación de la Carga ( dentro de 24 horas)
   Rango de flete
-
 
 ![Crear solicitud][crear_solicitud]
 
@@ -61,8 +64,13 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 [cambio_estados]: ./assets/cambio-estados.png "Cambio estados"
 
+**Enturnado:** Conductor esta disponible para hacer parte de la solicitud de servicio y match de vehículo.
+**Aceptado:** Conductor acepta la solicitud de servicio y esta listo para ser asignado a su vehículo con la informacion del destino y  origen.
+**En Transito:** Conductor esta en camino hacia su origen para cumplir con entrega de servicio.
+**Entregado:** Conductor ha llegado a su destino y entregado el servicio.
+**Emergencia:** Conductor tiene una inconvenience desde el estado Aceptado que lo impide cumplir con la recogida y entrega del servicio.
 
-**TODO: Definir estados : Aceptado, Cargando, En Transito, Entregado ?**
+**Enturnado, Aceptado, Cargando, En Transito, Entregado, Emergencia**
 
 ## 6. Calificación de actores
 
