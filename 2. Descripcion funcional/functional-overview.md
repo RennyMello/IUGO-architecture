@@ -4,7 +4,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 1. Carga de usuarios y assets
 
-* Se cargarán periodicamente (**TBD**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
+* El sistema cargará periodicamente (**TBD**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
 
 * El sistema no validará la información cargada por las empresas de transporte.
 
