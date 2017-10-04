@@ -4,17 +4,17 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 1. Carga de usuarios y assets
 
-* El sistema cargará periodicamente (**TBD**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
+* El sistema deberá cargará periodicamente (**TBD**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
 
-* El sistema no validará la información cargada por las empresas de transporte.
+* El sistema no deberá validará la información cargada por las empresas de transporte.
 
 ## 2. Enturnamiento
 
-* Los Administradores de los vehículos podrán enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
+* El sistema deberá permitir a los los Administradores de los vehículos enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
 
 * El sistema deberá validar que el usuario que desea enturar el vehículo y conductor seal el administrador de los mismos.
 
-* Los propietarios de los vehículos podrán asignar a un usuario particular como administrador de los vehículos propios.
+* El sistema deberá permitir a los propietarios de los vehículos asignar a un *administrador de flota* como administrador de un vehículo propio.
 
 ![Tomar Turno][tomar_Turno]
 
@@ -22,7 +22,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 3. Solicitudes de Servicio
 
-* Los Despachadores de las empresas de transporte podrán crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
+* El sistema deberá permitir a los Despachadores de las empresas de transporte crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
 
 * Las especificaciones y características que tiene la carga/el servicio
   
@@ -48,17 +48,17 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * El sistema deberá presentar los vehículos que cumplan con las características requeridas para una solicitud de carga.
 
-* El sistema permitira a cada administrador de empresa estabelcer los criterios con los cuales se establece el orden en el cual se mostrarán los candidatos.
+* El sistema deberá permitir a cada administrador de empresa establecer los criterios con los cuales se establece el orden en el cual se muestran los candidatos.
 
-* Los Despachadores podrán seleccionarán los candidatos que consideren *aptos* para el transporte de la carga.
+* El sistema deberá permitir a los Despachadores seleccionar los candidatos que consideren *aptos* para el transporte de la carga.
 
-* El Sistema deberá notificar a los administradores de flota que han sido pre-seleccionados por el despachador.
+* El sistema deberá notificar a los administradores de flota que han sido pre-seleccionados por el despachador.
 
-* Los Administradores de Flota podrán aceptar dicha oferta y participar en la asignación de la carga.
+* El sistema deberá permitir a los Administradores de Flota aceptar dicha oferta y participar en la asignación de la carga.
 
-* Los Despachadores seleccionarán uno o varios de los ofertantes/candidatos, esto dependerá de la cantidad de vehículos necesarios para transportar dicha carga.
+* El sistema deberá permitir a los Despachadores seleccionar uno o varios de los ofertantes/candidatos, esto dependerá de la cantidad de vehículos necesarios para transportar dicha carga.
 
-* El Sistema deberá terminar la oferta una vez el despachador haya asignado la totalidad de vehículos requeridos para la solicitud de carga.
+* El sistema deberá terminar la oferta una vez el despachador haya asignado la totalidad de vehículos requeridos para la solicitud de carga.
 
 ![Asignar turno][asignar_turno]
 
@@ -66,9 +66,9 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 5. Cambio de estados
 
-* El conductor podrá cambiar el estado de la solicitud de carga a **En transito** una vez se encuentra dentro de la zona de carga especificada en la solicitud de carga.
+* El sistema deberá permitir al conductor cambiar el estado de la solicitud de carga a **En transito** una vez se encuentra dentro de la zona de carga especificada en la solicitud de carga.
 
-* El conductor podrá cambiar el estado de la solicitud de carga a **Entregado** una vez se encuentre dentro de la zona de descarga especificada en la solicitud de carga.
+* El sistema deberá permitir al conductor cambiar el estado de la solicitud de carga a **Entregado** una vez se encuentre dentro de la zona de descarga especificada en la solicitud de carga.
 
 ![Cambio de estados][cambio_estados]
 
@@ -90,7 +90,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 6. Calificación de actores
 
-* El Conductor podrá calificar de forma cuantitativa y cualitativamente al Generador de Carga, Empresa de Transporte y Vehículo.
+* El sistema deberá permitir al Conductor calificar de forma cuantitativa y cualitativamente al Generador de Carga, Empresa de Transporte y Vehículo.
 
    Cumplimiento de tiempos de recogida y descarga
    
@@ -100,7 +100,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
    
    Kilometros recorridos por mes
    
-* La Empresa de Transporte podrá calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
+* El sistema deberá permitir a la Empresa de Transporte calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
 
    Fairness de asignación (Difícil en medir)
    
@@ -110,13 +110,13 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
    
     Comentarios adicionales
 
-* El Generador de Carga podrá calificar cuantitativa y cualitativamente, Vehículo y Empresa de Transporte.
+* El sistema deberá permitir al Generador de Carga calificar cuantitativa y cualitativamente, Vehículo y Empresa de Transporte.
 
    Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
    
    Kilometraje (Excesivo y Moderado)
 
-* El Administrador de Flotas podrá calificar cuantitativa y cualitativamente, Conductor y Empresa de Transporte.
+* El sistema deberá permitir al Administrador de Flotas calificar cuantitativa y cualitativamente, Conductor y Empresa de Transporte.
 
    Manejo de estados y su manipulacion (En especial el estado de Enturnarse y Desenturnarse)
    
@@ -130,4 +130,3 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 [calificacion]: ./assets/calificacion.png "Calificacion"
 
 
-**TODO: Revisar sintáxis requisitos funcionales**
