@@ -38,7 +38,7 @@ Los escenarios de calidad para IUGO son los siguientes
 
     It's about time and the software system's ability to meet timing requirements. When events occur-interrupts, messages, requests from user or other systems, or clock events marking the passage of time, the system, or some element of the system, must respond to them in time.
 
-    * El procesamiento de un evento generado por un componente no deberá tardar más de 5 segundos promedio en ser procesado.
+    * El procesamiento de un evento generado por un componente no deberá tardar más de 5 segundos en promedio para ser procesado.
 
     ![performance event process time][performance-event-process-time]
 
@@ -46,7 +46,7 @@ Los escenarios de calidad para IUGO son los siguientes
 
     Security is a measure of the system's ability to protect data and information from unauthorized access while still providing access to people and systems that are authorized.
 
-    * La información de los vehículos y conductores propios de cada empresa de transporte deberá ser solo visible para los administradores de flota y despachadores de cada empresa.
+    * La información de los vehículos y conductores propios de cada empresa de transporte deberá ser visible sólo para los administradores de flota y despachadores de cada empresa.
     
     ![Security data protection][security-dataprotection]
 
@@ -56,7 +56,7 @@ Los escenarios de calidad para IUGO son los siguientes
 
     Referes to the ease with which software can be made to demonstrate its faults through (typically execution-based) testing.
 
-    * Cada componente del sistema deberá tener una cobertura de su código mediante pruebas unitarias de un 85%.
+    * Cada componente del sistema deberá tener una cobertura mínima de su código mediante pruebas unitarias de un 85%.
 
     * La UI de cada contexto deberá tener pruebas de aceptación que cubran al menos 70% de los diferentes flujos de la aplicación.
 
@@ -64,9 +64,9 @@ Los escenarios de calidad para IUGO son los siguientes
 
     Usability is concerned with how easy it is for the user to accomplish a desired task and the kind of user support the system provides.
 
-    IUGO será utilizado por personas con una forma físfica endomorfíca, es decir contextura gruesa, además de poseen un bajo conocimiento técnico en el uso de aplicaciones móviles.
+    IUGO será utilizado por personas con una forma física endomórfica, es decir contextura gruesa, además de poseer un bajo conocimiento técnico en el uso de aplicaciones móviles.
 
-    * El conductor de un vehículo deberá poder utilizar la aplicación de manera productiva después de diez minutos de haber instalado la aplicación. (Cambios de estado)
+    * El conductor de un vehículo deberá poder utilizar la aplicación de manera productiva después de diez minutos de haber instalado la aplicación. (Cambios de estado).
 
     * El administrador de flotas deberá poder utilizar la aplicación de manera productiva después de treinta minutos de haber instalado la aplicación. (Enturnamiento, Aceptar ofertas de solicitudes de carga)
 
