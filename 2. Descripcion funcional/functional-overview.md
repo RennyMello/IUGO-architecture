@@ -16,6 +16,8 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 
 * El sistema deberá permitir a los propietarios de los vehículos asignar a un *administrador de flota* como administrador de un vehículo propio.
 
+* El sistema deberá permitir administrar solamente a los vehículos que tiene permisos para administrar.
+
 ![Tomar Turno][tomar_Turno]
 
 [tomar_Turno]: ./assets/tomar-turno.png "Tomar Turno"
@@ -44,7 +46,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 
 ## 4. Asignación de turnos
 
-* El sistema deberá presentar los vehículos que cumplan con las características requeridas para una solicitud de carga.
+* El sistema deberá presentar los vehículos/placas que cumplan con las características requeridas para una solicitud de carga.
 
 * El sistema deberá permitir a cada administrador de empresa establecer los criterios con los cuales se establece el orden en el cual se muestran los candidatos.
 
@@ -95,8 +97,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 	* Uso del vehículo al entregar y retorno
    
 	* Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
-   
-   
+      
 	* Kilometros recorridos por mes
    
 * El sistema deberá permitir a la Empresa de Transporte calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
