@@ -1,18 +1,18 @@
 # 2. Descripción funcional
 
-Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
+Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 
 ## 1. Carga de usuarios y assets
 
-* El sistema deberá cargará periodicamente (**TBD**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
+* El sistema deberá cargar periódicamente (**TBD**) los conductores/vehículos/propietarios registrados en las empresas de transporte/Administradores de flotas/placas.
 
-* El sistema no deberá validará la información cargada por las empresas de transporte.
+* El sistema no deberá validar la información cargada por las empresas de transporte.
 
 ## 2. Enturnamiento
 
 * El sistema deberá permitir a los los Administradores de los vehículos enturnar un vehículo y un conductor en una región (Caribe, Andina...), departamento (Antioquia, Boyacá...) o ciudad de origen (Medellín, Bogotá...).
 
-* El sistema deberá validar que el usuario que desea enturar el vehículo y conductor seal el administrador de los mismos.
+* El sistema deberá validar que el usuario que desea enturar el vehículo y el conductor sea el administrador de los mismos.
 
 * El sistema deberá permitir a los propietarios de los vehículos asignar a un *administrador de flota* como administrador de un vehículo propio.
 
@@ -22,23 +22,21 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 ## 3. Solicitudes de Servicio
 
-* El sistema deberá permitir a los Despachadores de las empresas de transporte crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida y los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
+* El sistema deberá permitir a los Despachadores de las empresas de transporte crear solicitudes de servicio (carga). Las solicitudes de servicio contendrán información como el costo del flete, el origen, destino, fecha de recogida, los **posibles** tipos de vehículos requeridos para esta servicio y cantidad de los mismos.
 
 * Las especificaciones y características que tiene la carga/el servicio
-  
-  Tipo de Carga: (Carga granel solida,Carga granel liquida, Perecedera, Refrigerada, Frágil y Animales vivos)
-  
-  Tipo de vehículo: **Resolucion 4308**
-  
-  Opciones a elegir: Cabezote
-  
-  Accesorios adicionales: TBD (Trailer y sus caracteristicas)
-  
-  Fechas de recogida y de entregas
-  
-  Fecha límite de Asignación de la Carga ( dentro de 24 horas)
-  
-  Costo del flete
+
+| Nombre        | Descripción   | 
+| ------------- |:-------------:| 
+| Tipo de Carga      |  (Carga granel solida,Carga granel liquida, Perecedera, Refrigerada, Frágil y Animales vivos) |
+| Tipo de vehículo    | **Resolucion 4308**    |
+| Opciones a elegir | Cabezote      | 
+| Accesorios adicionales | TBD (Trailer y sus caracteristicas)      | 
+| Observaciones | Barras de bloqueo, Lonas, Cinchos     | 
+| Fechas | Fechas de recogida y de entregas      | 
+| Fecha límite |   Fecha límite de Asignación de la Carga ( dentro de 24 horas)    |
+| Costo del flete |   Puede estar dado por unidad de carga (# cajas), por volumen, por peso (tonelada) o por valor monetario    | 
+
 
 ![Crear solicitud][crear_solicitud]
 
@@ -84,7 +82,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 **Emergencia:** Conductor tiene una inconvenience desde el estado Aceptado que lo impide cumplir con la recogida y entrega del servicio.
 
-**No Disponible:** 
+**No Disponible:** Conductor no se encuentra disponible para iniciar el proceso de Enturnamiento lo cual no cumple para ningula pre-seleccion de servicio.
 
 **Enturnado, Aceptado, Cargando, En Transito, Entregado, Emergencia, No Disponible**
 
@@ -92,37 +90,41 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes.
 
 * El sistema deberá permitir al Conductor calificar de forma cuantitativa y cualitativamente al Generador de Carga, Empresa de Transporte y Vehículo.
 
-   Cumplimiento de tiempos de recogida y descarga
+	* Cumplimiento de tiempos de recogida y descarga
    
-   Uso del vehículo al entregar y retorno
+	* Uso del vehículo al entregar y retorno
    
-   Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
-   
-   Kilometros recorridos por mes
+	* Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
+      
+	* Kilometros recorridos por mes
    
 * El sistema deberá permitir a la Empresa de Transporte calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
 
-   Fairness de asignación (Difícil en medir)
+	* Fairness de asignación (Difícil en medir)
    
-   Veces de asignaciones
+	* Veces de asignaciones
    
-   Asignaciones asignadas en fechas limites
+	* Asignaciones asignadas en fechas límites
    
-    Comentarios adicionales
+	* Comentarios adicionales
 
-* El sistema deberá permitir al Generador de Carga calificar cuantitativa y cualitativamente, Vehículo y Empresa de Transporte.
+* El sistema deberá permitir al Generador de Carga calificar cuantitativa y cualitativamente de forma tipo Survey
 
-   Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
+	* Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
+	
+	* Estado de la carga entregada
+	
+	* Comportamiento del sistema al utilizarlo
    
-   Kilometraje (Excesivo y Moderado)
+	* Comentarios adicionales
 
 * El sistema deberá permitir al Administrador de Flotas calificar cuantitativa y cualitativamente, Conductor y Empresa de Transporte.
 
-   Manejo de estados y su manipulacion (En especial el estado de Enturnarse y Desenturnarse)
+	* Manejo de estados y su manipulacion (En especial el estado de Enturnarse y Desenturnarse)
    
-   Requisitos de solicitud de servicios (veces requerido)
+	* Requisitos de solicitud de servicios (veces requerido)
    
-   Referridos
+	* Referidos
    
 
 ![Calificación][calificacion]
