@@ -32,10 +32,10 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 | Tipo de vehículo    | **Resolucion 4308**    |
 | Opciones a elegir | Cabezote      | 
 | Accesorios adicionales | TBD (Trailer y sus caracteristicas)      | 
-| Opciones a elegir | Cabezote      | 
+| Observaciones | Barras de bloqueo, Lonas, Cinchos     | 
 | Fechas | Fechas de recogida y de entregas      | 
 | Fecha límite |   Fecha límite de Asignación de la Carga ( dentro de 24 horas)    |
-| Costo del flete |   Puede estar dado por unidad de carga (# cajas), por volumen o por peso    | 
+| Costo del flete |   Puede estar dado por unidad de carga (# cajas), por volumen, por peso (tonelada) o por valor monetario    | 
 
 
 ![Crear solicitud][crear_solicitud]
@@ -82,7 +82,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 
 **Emergencia:** Conductor tiene una inconvenience desde el estado Aceptado que lo impide cumplir con la recogida y entrega del servicio.
 
-**No Disponible:** 
+**No Disponible:** Conductor no se encuentra disponible para iniciar el proceso de Enturnamiento lo cual no cumple para ningula pre-seleccion de servicio.
 
 **Enturnado, Aceptado, Cargando, En Transito, Entregado, Emergencia, No Disponible**
 
@@ -95,8 +95,7 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 	* Uso del vehículo al entregar y retorno
    
 	* Verificación de Documentación actualizada (Manifiesto aunque puede ser difícil de medir)
-   
-   
+      
 	* Kilometros recorridos por mes
    
 * El sistema deberá permitir a la Empresa de Transporte calificar cuantitativa y cualitativamente al Conductor y Administrador de Flotas.
@@ -109,11 +108,15 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
    
 	* Comentarios adicionales
 
-* El sistema deberá permitir al Generador de Carga calificar cuantitativa y cualitativamente, Vehículo y Empresa de Transporte.
+* El sistema deberá permitir al Generador de Carga calificar cuantitativa y cualitativamente de forma tipo Survey
 
 	* Estado del vehículo durante el transcurso asignado (recogida hasta entrega)
+	
+	* Estado de la carga entregada
+	
+	* Comportamiento del sistema al utilizarlo
    
-	* Kilometraje (Excesivo y Moderado)
+	* Comentarios adicionales
 
 * El sistema deberá permitir al Administrador de Flotas calificar cuantitativa y cualitativamente, Conductor y Empresa de Transporte.
 
