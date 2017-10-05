@@ -48,6 +48,8 @@ Los escenarios de calidad para IUGO son los siguientes
 
     * La información de los vehículos y conductores propios de cada empresa de transporte deberá ser visible sólo para los administradores de flota y despachadores de cada empresa.
     
+    * Visibilidad para los Administradores de Flotas para poder ver los conductores afiliados/asociados a las demás empresas.
+    
     ![Security data protection][security-dataprotection]
 
     * Los conductores que han aceptado un turno no podrán ser suplantados por otras personas para llevar acabo el transporte de la carga.
