@@ -29,10 +29,11 @@ Los requisitos funcionales de alto nivel para el nuevo IUGO son los siguientes:
 | Nombre        | Descripción   | 
 | ------------- |:-------------:| 
 | Tipo de Carga      |  (Carga granel solida,Carga granel liquida, Perecedera, Refrigerada, Frágil y Animales vivos) |
-| Tipo de vehículo    | **Resolucion 4308**    |
+| Tipo de vehículo    | Turbo, Sencillo, DobleTroque, DobleTroque Cuatromanos, Minimula(Patineta), Tractomula 3 ejes |
+| Cantidad de vehículo    | 1,2,3,4 |
 | Opciones a elegir | Cabezote      | 
 | Accesorios adicionales | TBD (Trailer y sus caracteristicas)      | 
-| Observaciones | Barras de bloqueo, Lonas, Cinchos     | 
+| Observaciones | Barras de bloqueo, Lonas, Cinchas, Cinta de amarre, Mamparra, Cadenas, Pallets      | 
 | Fechas | Fechas de recogida y de entregas      | 
 | Fecha límite |   Fecha límite de Asignación de la Carga ( dentro de 24 horas)    |
 | Costo del flete |   Puede estar dado por unidad de carga (# cajas), por volumen, por peso (tonelada) o por valor monetario    | 
